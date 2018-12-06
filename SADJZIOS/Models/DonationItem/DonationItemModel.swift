@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum ItemCategory:String, Codable{
+public enum ItemCategory:Int, CaseIterable, Codable{
     /**
      * Food item category.
      */
@@ -50,31 +50,32 @@ public class DonationItemModel: Codable {
     
     let description: String;
     
-    let quantity: String;
+    let quantity: Int;
     
     let category:ItemCategory;
     
     let id:String;
     
-    
-    let time:Date;
+    let time:String;
     
     let locationId: String;
 
     init(name:String,
          description: String,
-         quantity: String,
+         quantity: Int,
          category:ItemCategory,
          id:String,
-         time:Date,
+         time:String,
          locationId: String){
         self.name = name;
         self.description = description;
         self.quantity = quantity;
         self.category = category;
         self.id = id;
-        self.time = time;
+        self.time = time
         self.locationId = locationId;
     }
+    
+
     
 }

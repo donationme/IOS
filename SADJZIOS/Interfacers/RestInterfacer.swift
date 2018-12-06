@@ -15,19 +15,17 @@ public enum RequestType:String{
 }
 
 
-public class RestInterfacer<T : Codable> {
+public class RestInterfacer<T : Codable, S : Codable> {
     
     
     private let session = URLSession.shared
 
-    
-    public func getRequest(endpoint : RestEndpoints, args : String?, token : String?, completionHandler: @escaping (T?, Error?) -> Void) -> URLSessionTask {
+    @discardableResult public func getRequest(endpoint : RestEndpoints, args : String?, token : String?, completionHandler: @escaping (T?, Error?) -> Void) -> URLSessionTask {
         let request = self.createRequest(requestType: RequestType.GET, endpoint: endpoint, args: args, token: token)
         return dataTask(request: request, completionHandler: completionHandler);
     }
     
-    
-    public func postRequest(endpoint : RestEndpoints, model : T, args : String?, token : String?, completionHandler: @escaping (T?, Error?) -> Void) -> URLSessionTask {
+    @discardableResult public func postRequest(endpoint : RestEndpoints, model : S, args : String?, token : String?, completionHandler: @escaping (T?, Error?) -> Void) -> URLSessionTask {
         let request = self.createRequest(requestType: RequestType.POST, endpoint: endpoint, args: args, token: token)
         let encoder = JSONEncoder();
         let sendModel = try? encoder.encode(model)
@@ -76,7 +74,7 @@ public class RestInterfacer<T : Codable> {
     private func createRequest(requestType : RequestType, endpoint : RestEndpoints, args : String?,token : String?) -> NSMutableURLRequest{
         
         var headers: [String : String] = [:];
-        
+        headers["Content-Type"] =  "application/json"
         if (token != nil){
             headers["Authorization"] =  "Bearer " + token!;
         }

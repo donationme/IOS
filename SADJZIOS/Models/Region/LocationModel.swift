@@ -11,7 +11,10 @@ import Foundation
 public class Coords : Codable{
     let latitude : Double;
     let longitude : Double;
-
+    init(latitude : Double, longitude : Double){
+         self.latitude = latitude
+        self.longitude = longitude;
+    }
 }
 
 
@@ -30,7 +33,7 @@ public class LocationModel:Codable {
     
     let state : String;
     
-    let zip: String;
+    let zip: Int;
     
     let address: String;
     
@@ -53,7 +56,7 @@ public class LocationModel:Codable {
         street : String,
         city : String,
         state : String,
-        zip: String,
+        zip: Int,
         address: String,
         locationType: String,
         phone : String,

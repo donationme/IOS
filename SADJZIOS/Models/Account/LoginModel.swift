@@ -10,11 +10,11 @@ import Foundation
 
 
 public class LoginModel:Codable {
-    let userName : String;
+    let username : String;
     let password : String;
 
     init(userName : String, password : String){
-        self.userName = userName
+        self.username = userName
         self.password = password
     }
 }
