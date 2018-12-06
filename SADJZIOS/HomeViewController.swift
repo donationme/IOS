@@ -40,7 +40,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+    
+    
     }
     
     
@@ -55,11 +56,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         
-        // Do any additional setup after loading the view, typically from a nib.
-        let tokenStr = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBZnNoYXduIiwiVXNlcm5hbWUiOiJhZnNoYXduMUBnLmNvbSIsIlR5cGUiOiJBZG1pbiIsImVtYWlsIjoiYWZzaGF3bjFAZy5jb20iLCJqdGkiOiIxZjU2NGQ1OS01OWI1LTQxZDQtYmNhMi0wMWI0NTgyZWQzYzciLCJleHAiOjE1NDQxMTkxMDUsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NjM5MzkvIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo2MzkzOS8ifQ.Q30H4OLY1hWi-ldTbOUvR9lu0JSl9doKY95tXapehmM"
-        let tokenModel = TokenModel(token: tokenStr)
-        
-        TokenInterfacer.setToken(token: tokenModel)
+
         let rest = RestInterfacer<UserModel,String>()
         if let tokenModel = TokenInterfacer.getToken(){
             rest.getRequest(endpoint: RestEndpoints.Account, args: nil, token: tokenModel.token){ response, error in

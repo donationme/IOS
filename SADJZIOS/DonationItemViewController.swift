@@ -118,15 +118,15 @@ class DonationItemViewController: UIViewController, UIPickerViewDelegate, UIPick
         quantityStepper.maximumValue = 1000
         quantityStepper.value = Double(self.donationItem?.quantity ?? 1)
         let userType = SessionInterfacer.getUser()?.userType
-//        if (userType != UserType.Admin || userType != UserType.LocationEmployee || userType != UserType.Manager){
-//            self.nameText.isEnabled = false;
-//            self.descripText.isEnabled = false;
-//            self.quantityStepper.isEnabled = false;
-//            self.categoryPicker.isUserInteractionEnabled = false
-//            self.editAddBtn.isEnabled = false
-//            self.deleteBtn.isEnabled = false
-//
-//        }
+        if (userType != UserType.Admin || userType != UserType.LocationEmployee || userType != UserType.Manager){
+            self.nameText.isEnabled = false;
+            self.descripText.isEnabled = false;
+            self.quantityStepper.isEnabled = false;
+            self.categoryPicker.isUserInteractionEnabled = false
+            self.editAddBtn.isEnabled = false
+            self.deleteBtn.isEnabled = false
+
+        }
         if (self.action == DonationItemAction.ADD){
             self.deleteBtn.isHidden = true;
             self.editAddBtn.setTitle("Add", for: .normal)

@@ -13,7 +13,7 @@ import Foundation
 /**
  * The enum User type.
  */
-public enum UserType :String, Codable{
+public enum UserType :String, CaseIterable, Codable{
     /**
      * Admin user type.
      */

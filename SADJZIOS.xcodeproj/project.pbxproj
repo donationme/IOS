@@ -34,6 +34,7 @@
 		20E31D8C21B73E1B007FDFF8 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D8B21B73E1B007FDFF8 /* AccountModel.swift */; };
 		20E31D9021B74019007FDFF8 /* AccountInterfacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D8F21B74019007FDFF8 /* AccountInterfacer.swift */; };
 		20E31D9621B741F7007FDFF8 /* RestInterfacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D9521B741F7007FDFF8 /* RestInterfacer.swift */; };
+		20F1889621B9970D00934E36 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1889521B9970D00934E36 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		20E31D8B21B73E1B007FDFF8 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		20E31D8F21B74019007FDFF8 /* AccountInterfacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInterfacer.swift; sourceTree = "<group>"; };
 		20E31D9521B741F7007FDFF8 /* RestInterfacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterfacer.swift; sourceTree = "<group>"; };
+		20F1889521B9970D00934E36 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				20BCAEEE21B8E45900C723DB /* LocationViewController.swift */,
 				208186B021B8D199001A8A6F /* LocationNavController.swift */,
 				20BCAEF221B8EEF100C723DB /* DonationItemViewController.swift */,
+				20F1889521B9970D00934E36 /* SearchViewController.swift */,
 				208186AA21B8B5FD001A8A6F /* HomeViewController.swift */,
 				208186AE21B8C2B3001A8A6F /* DonationCenterViewController.swift */,
 				208186A621B8A7FE001A8A6F /* SignInViewController.swift */,
@@ -386,6 +389,7 @@
 				20E31D8C21B73E1B007FDFF8 /* AccountModel.swift in Sources */,
 				20E31D7721B716C0007FDFF8 /* AppReference.swift in Sources */,
 				208186AF21B8C2B3001A8A6F /* DonationCenterViewController.swift in Sources */,
+				20F1889621B9970D00934E36 /* SearchViewController.swift in Sources */,
 				208186A721B8A7FE001A8A6F /* SignInViewController.swift in Sources */,
 				20E31D8821B73911007FDFF8 /* LocationModel.swift in Sources */,
 				20E31D7E21B727EE007FDFF8 /* SearchModel.swift in Sources */,

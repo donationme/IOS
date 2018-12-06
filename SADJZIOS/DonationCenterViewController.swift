@@ -15,6 +15,8 @@ class DonationCenterViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
 
     private var region:RegionModel?;
+    public var searchDelegate:SearchDelegate?
+    private var goSearchAfter = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,26 +55,52 @@ class DonationCenterViewController: UIViewController, MKMapViewDelegate {
         
     }
     
+    func searchAfterChoose(){
+        
+        self.goSearchAfter = true
+
+
+    }
+    
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         //do what you need here
         mapView.deselectAnnotation(view.annotation, animated: true)
         if let region = self.region{
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            if let locationNavController = storyboard.instantiateViewController(withIdentifier: "LocationNavController") as? LocationNavController{
+            var locationModel:LocationModel?
             
-                self.present(locationNavController, animated: true)
-                
-                if let annotation = view.annotation{
-                    if let subtitle = annotation.subtitle{
-                        locationNavController.displayLocation(locationModel: region.locations[Int(subtitle!) ?? 0 ])
-                        
-                    }
+            if let annotation = view.annotation{
+                if let subtitle = annotation.subtitle{
+                    
+                    locationModel = region.locations[Int(subtitle!) ?? 0 ]
                     
                 }
                 
             }
             
+            if (self.goSearchAfter == true){
+                if let searchDelegate = self.searchDelegate, let _locationModel = locationModel{
+                    
+                    searchDelegate.setLocationID(locationModel: _locationModel)
+                    self.dismiss(animated: true)
+                }
+            }else{
+                
+                if let locationNavController = storyboard.instantiateViewController(withIdentifier: "LocationNavController") as? LocationNavController{
+                    
+                    self.present(locationNavController, animated: true)
+                    
+                    if let _locationModel = locationModel{
+                        locationNavController.displayLocation(locationModel: _locationModel)
+                    }
+
+                    
+                }
+
+            }
+            
+
             
         }
 

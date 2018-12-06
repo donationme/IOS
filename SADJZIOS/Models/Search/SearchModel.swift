@@ -11,9 +11,9 @@ import Foundation
 
 
 public class SearchModel : Codable {
-    let results : DonationItemModel;
+    let results : [DonationItemModel];
     
-    init(results : DonationItemModel){
+    init(results : [DonationItemModel]){
         self.results = results
     }
 }
