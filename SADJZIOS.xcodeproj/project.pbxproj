@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207DE55E21BAD62B0045B03B /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207DE55D21BAD62B0045B03B /* LocationViewController.swift */; };
 		208186A721B8A7FE001A8A6F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208186A621B8A7FE001A8A6F /* SignInViewController.swift */; };
 		208186A921B8AABD001A8A6F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208186A821B8AABD001A8A6F /* RegisterViewController.swift */; };
 		208186AB21B8B5FE001A8A6F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208186AA21B8B5FD001A8A6F /* HomeViewController.swift */; };
 		208186AD21B8BDDF001A8A6F /* SessionInterfacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208186AC21B8BDDF001A8A6F /* SessionInterfacer.swift */; };
 		208186AF21B8C2B3001A8A6F /* DonationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208186AE21B8C2B3001A8A6F /* DonationCenterViewController.swift */; };
 		208186B121B8D199001A8A6F /* LocationNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208186B021B8D199001A8A6F /* LocationNavController.swift */; };
-		20BCAEEF21B8E45900C723DB /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BCAEEE21B8E45900C723DB /* LocationViewController.swift */; };
 		20BCAEF321B8EEF100C723DB /* DonationItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BCAEF221B8EEF100C723DB /* DonationItemViewController.swift */; };
 		20E31D4921B716A5007FDFF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D4821B716A5007FDFF8 /* AppDelegate.swift */; };
 		20E31D4B21B716A5007FDFF8 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D4A21B716A5007FDFF8 /* WelcomeViewController.swift */; };
@@ -32,7 +32,6 @@
 		20E31D8621B7366E007FDFF8 /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D8521B7366E007FDFF8 /* RegionModel.swift */; };
 		20E31D8821B73911007FDFF8 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D8721B73911007FDFF8 /* LocationModel.swift */; };
 		20E31D8C21B73E1B007FDFF8 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D8B21B73E1B007FDFF8 /* AccountModel.swift */; };
-		20E31D9021B74019007FDFF8 /* AccountInterfacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D8F21B74019007FDFF8 /* AccountInterfacer.swift */; };
 		20E31D9621B741F7007FDFF8 /* RestInterfacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E31D9521B741F7007FDFF8 /* RestInterfacer.swift */; };
 		20F1889621B9970D00934E36 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F1889521B9970D00934E36 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		207DE55D21BAD62B0045B03B /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		208186A521B8A58F001A8A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		208186A621B8A7FE001A8A6F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		208186A821B8AABD001A8A6F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +62,6 @@
 		208186AC21B8BDDF001A8A6F /* SessionInterfacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionInterfacer.swift; sourceTree = "<group>"; };
 		208186AE21B8C2B3001A8A6F /* DonationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationCenterViewController.swift; sourceTree = "<group>"; };
 		208186B021B8D199001A8A6F /* LocationNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNavController.swift; sourceTree = "<group>"; };
-		20BCAEEE21B8E45900C723DB /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = ../../../../.Trash/LocationViewController.swift; sourceTree = "<group>"; };
 		20BCAEF221B8EEF100C723DB /* DonationItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemViewController.swift; sourceTree = "<group>"; };
 		20E31D4521B716A5007FDFF8 /* SADJZIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SADJZIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E31D4821B716A5007FDFF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		20E31D8521B7366E007FDFF8 /* RegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 		20E31D8721B73911007FDFF8 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		20E31D8B21B73E1B007FDFF8 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
-		20E31D8F21B74019007FDFF8 /* AccountInterfacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInterfacer.swift; sourceTree = "<group>"; };
 		20E31D9521B741F7007FDFF8 /* RestInterfacer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterfacer.swift; sourceTree = "<group>"; };
 		20F1889521B9970D00934E36 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +143,7 @@
 				20E31D7A21B71EC0007FDFF8 /* Models */,
 				20E31D4821B716A5007FDFF8 /* AppDelegate.swift */,
 				20E31D4A21B716A5007FDFF8 /* WelcomeViewController.swift */,
-				20BCAEEE21B8E45900C723DB /* LocationViewController.swift */,
+				207DE55D21BAD62B0045B03B /* LocationViewController.swift */,
 				208186B021B8D199001A8A6F /* LocationNavController.swift */,
 				20BCAEF221B8EEF100C723DB /* DonationItemViewController.swift */,
 				20F1889521B9970D00934E36 /* SearchViewController.swift */,
@@ -202,7 +200,6 @@
 		20E31D8E21B73FB6007FDFF8 /* Interfacers */ = {
 			isa = PBXGroup;
 			children = (
-				20E31D8F21B74019007FDFF8 /* AccountInterfacer.swift */,
 				20E31D9521B741F7007FDFF8 /* RestInterfacer.swift */,
 				208186AC21B8BDDF001A8A6F /* SessionInterfacer.swift */,
 			);
@@ -378,9 +375,7 @@
 			files = (
 				208186AD21B8BDDF001A8A6F /* SessionInterfacer.swift in Sources */,
 				20E31D8021B7314E007FDFF8 /* DonationItemModel.swift in Sources */,
-				20E31D9021B74019007FDFF8 /* AccountInterfacer.swift in Sources */,
 				20E31D8421B735D9007FDFF8 /* TokenModel.swift in Sources */,
-				20BCAEEF21B8E45900C723DB /* LocationViewController.swift in Sources */,
 				208186AB21B8B5FE001A8A6F /* HomeViewController.swift in Sources */,
 				20BCAEF321B8EEF100C723DB /* DonationItemViewController.swift in Sources */,
 				20E31D7921B71AFA007FDFF8 /* RestEndpoints.swift in Sources */,
@@ -391,6 +386,7 @@
 				208186AF21B8C2B3001A8A6F /* DonationCenterViewController.swift in Sources */,
 				20F1889621B9970D00934E36 /* SearchViewController.swift in Sources */,
 				208186A721B8A7FE001A8A6F /* SignInViewController.swift in Sources */,
+				207DE55E21BAD62B0045B03B /* LocationViewController.swift in Sources */,
 				20E31D8821B73911007FDFF8 /* LocationModel.swift in Sources */,
 				20E31D7E21B727EE007FDFF8 /* SearchModel.swift in Sources */,
 				208186A921B8AABD001A8A6F /* RegisterViewController.swift in Sources */,

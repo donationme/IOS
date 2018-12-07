@@ -11,7 +11,7 @@ import Foundation
 
 public class AppReference{
     
-    static let serverAddress = "10.0.1.17";
+    static let serverAddress = "143.215.94.206";
     
     
 }

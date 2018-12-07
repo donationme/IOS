@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bzw-6f-I6z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wq0-qs-exa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -239,7 +239,7 @@
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="zXY-Zq-TD3">
                                             <inset key="largeContentSizeImageInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             <connections>
-                                                <action selector="addDonationItem:" destination="RFu-yD-tVB" id="Caz-hI-nQA"/>
+                                                <action selector="addItem:" destination="RFu-yD-tVB" id="mBa-Bs-RmL"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -264,18 +264,18 @@
                     <navigationItem key="navigationItem" title="Location Details" id="U0k-JE-hoa">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="8iG-ga-0jk">
                             <connections>
-                                <action selector="dismiss:" destination="RFu-yD-tVB" id="eYy-eV-uej"/>
+                                <action selector="dismiss:" destination="RFu-yD-tVB" id="506-go-Wud"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="donationItemTableView" destination="jzF-Ux-I2o" id="WQ3-Jr-eeS"/>
-                        <outlet property="locationTableView" destination="Vt0-l2-Dhf" id="EGz-2M-DhP"/>
+                        <outlet property="donationItemsTable" destination="jzF-Ux-I2o" id="0Va-Ir-Azm"/>
+                        <outlet property="locationTable" destination="Vt0-l2-Dhf" id="hw8-A1-flB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Afn-k5-KX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6165.6000000000004" y="242.42878560719643"/>
+            <point key="canvasLocation" x="6065" y="243"/>
         </scene>
         <!--Donation Item View Controller-->
         <scene sceneID="XRM-lh-2GG">

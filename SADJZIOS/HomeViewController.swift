@@ -58,7 +58,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
 
         let rest = RestInterfacer<UserModel,String>()
+        TokenInterfacer.setToken(token: TokenModel(token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBZnNoYXduIiwiVXNlcm5hbWUiOiJhZnNoYXduMjNAZy5jb20iLCJUeXBlIjoiQWRtaW4iLCJlbWFpbCI6ImFmc2hhd24yM0BnLmNvbSIsImp0aSI6IjUzNTY5OTNhLTU5MmEtNDI3ZS04NDQzLTU3M2Y5YzQ4ZWY3ZCIsImV4cCI6MTU0NDIxMDYwMCwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo2MzkzOS8iLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjYzOTM5LyJ9.5rIljyhoe8-DmP9Cn7Fo8cyzTw3je5d9pjyeZ8eLq04"))
         if let tokenModel = TokenInterfacer.getToken(){
+            
             rest.getRequest(endpoint: RestEndpoints.Account, args: nil, token: tokenModel.token){ response, error in
                 if let user = response {
                     SessionInterfacer.setUser(userModel: user)
